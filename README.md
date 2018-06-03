@@ -1,12 +1,18 @@
 # Frontend Boilerplate with React, MobX & TypeScript & Ant design framework with internationalization for nebulas blockchain.
 
-blockchain api in src/app/stores/NebStore.ts
+blockchain api in `src/app/stores/NebStore.ts`
 
-//to send transaction
+to send transaction
+
 `sendTransaction = (to, value, callFunction, callArgs, listener)`
 
-//only call
+only call
+
 `call = (to, callFunction, callArgs)`
+
+change this in `src/app/stores/createStore.js` default is mainnet
+
+const nebStore = new NebStore({node_url: "http://YOUR_NODE_URL"});
 
 
 A bare minimum mobx-react-typescript-webpack-i18n-mst-antd
