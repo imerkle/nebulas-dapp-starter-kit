@@ -20,7 +20,6 @@ export class NebStore{
 	private neb;
 	private account;
 	private infuraURL = {
-		private: 'http://76c4bc41.ngrok.io',
 		testnet: NebPay.config.testnetUrl,
 		mainnet: NebPay.config.mainnetUrl,
 	};
@@ -29,7 +28,7 @@ export class NebStore{
 	constructor({node_url}){
         this.neb = new nebulas.Neb();
         this.account = nebulas.Account;
-        this.node_url = node_url || this.infuraURL.private;
+        this.node_url = node_url || this.infuraURL.mainnet;
         this.neb.setRequest(new nebulas.HttpRequest(this.node_url));
         console.log(nebPay);
 	}
