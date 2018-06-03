@@ -1,0 +1,14 @@
+.footer{
+	background: transparent;
+}
+.footer a{
+	margin: 0 10px;
+	color: rgb(0, 35, 38);
+	font-weight: bold;
+	font-size: 13px;
+	opacity: 0.5;
+}
+.header{
+    background: rgb(255, 255, 255);
+    box-shadow: 4px 3px 8px rgba(209, 218, 233, 0.4);
+}
